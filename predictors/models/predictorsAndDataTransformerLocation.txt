@@ -1,0 +1,2 @@
+All the clf_XXX.pkl and data vectorizerTfIdf_XXX.pkl should be put here.
+Please email hencrice+foss@gmail.com to request a link to download all these trained models.
