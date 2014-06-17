@@ -1,8 +1,7 @@
+# -*- coding: UTF-8 -*-
 '''
 Copyright (c) 2014, Yen-Lin Chen (hencrice@gmail.com)
-All rights reserved.
 '''
-# -*- coding: UTF-8 -*-
 import oauth2
 import sys
 import urllib2
@@ -42,6 +41,8 @@ def getTwitterStream(requestParam, url='https://stream.twitter.com/{0}/statuses/
     except KeyboardInterrupt:
         stream.close()
         print('Twitter Stream closed.')
+    # except Exception: # possible to implement backoff reconnecting here?
+    #     pass
 
 if __name__ == '__main__':
     parameters = []
