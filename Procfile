@@ -1,0 +1,1 @@
+worker: python ./Predictors/SemanticPredictor.py -mp ./Predictors/models/ -b 500
