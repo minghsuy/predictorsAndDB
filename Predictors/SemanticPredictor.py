@@ -33,7 +33,7 @@ def predictOnStream(predictionModelsPath, bufferSize=1000, streamSrc=getTwitterS
     predictors = [load(open(predictionModelsPath + pName, 'rb')) for pName in predictors]
     tfIdfVectorizers = [load(open(predictionModelsPath + vName, 'rb')) for vName in tfIdfVectorizers]
     vecAndPredTuple = tuple(vecAndPred for vecAndPred in izip(tfIdfVectorizers, predictors))
-    db=MongoClient('ds045089.mongolab.com', 45089)['tanav']
+    db=MongoClient('ds051459.mongolab.com', 51459)['tanav']
     db.authenticate('user', 'password')
     tweetsColl=db.tweets
 

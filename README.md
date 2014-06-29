@@ -1,4 +1,4 @@
 predictorsAndDB
 ===============
 
-The implementation of predictors and interaction with the MongoDB.
+Semantic predictors responsible for appending semantic scores and the corresponding confidence values for each tweet in the Twitter stream.
